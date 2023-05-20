@@ -3,10 +3,10 @@ import fastifyJwt from "@fastify/jwt";
 
 import { gymsRoutes } from "./http/controllers/gyms/routes";
 import { usersRoutes } from "./http/controllers/users/routes";
+import { checkInsRoutes } from "./http/controllers/check-ins/routes";
 
 import { ZodError } from "zod";
 import { env } from "./env";
-import { checkInsRoutes } from "./http/controllers/check-ins/routes";
 
 export const app = fastify();
 

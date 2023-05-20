@@ -8,7 +8,7 @@ export async function validate(req: FastifyRequest, res: FastifyReply) {
     checkInId: z.string().uuid(),
   });
 
-  const { checkInId } = validateCheckInParamsSchema.parse(req.query);
+  const { checkInId } = validateCheckInParamsSchema.parse(req.params);
 
   const validateCheckInUseCase = makeValidateCheckInUseCase();
 
